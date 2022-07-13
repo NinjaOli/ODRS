@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="css/style.light.css">
+    <link rel="icon" href="image/favicon.ico">
+    <title>Oliver's Drag Race Simulator</title>
+    <script src="javascript/index.js" defer></script>
+</head>
+<body>
+    <h1 id="MainTitle">Oliver's Drag Race Simulator!</h1>
+    
+    <div id="MainBlock">
+        <p><big>This is you chance to simulate a drag race season!</big></p>
+        <div>
+            <p>How many queens do you want on your cast?</p>
+            <input type="number" min="3" max="20" id="castSize">
+            <button onclick="generateSpace()">Select</button>
+        </div>
+        <p id="castSelection"></p>
+
+        <div>
+            <p>Premiere formats: </p>
+            <select id="premiere-format">
+                <option>Normal premiere</option>
+                <option value="s6-premiere">S6</option>
+                <option value="s9-premiere">S9</option>
+                <option value="s12-premiere">S12</option>
+                <option value="porkchop">S13</option>
+                <option value="uk3-premiere">UK3</option>
+                <option value="s14-premiere">S14</option>
+                
+            </select>
+        </div>
+
+        <div>
+            <p>Returning formats: </p>
+            <select id="returning">
+                <option>None</option>
+                <option value="random">Random queen returns</option>
+                <option value="votes">Remaining queens vote</option>
+                <option value="conjoined-queens">Conjoined Queens Makeover</option>
+                <option value="queensofcomedy">Drag Queens Of Comedy</option>
+                <option value="kittygirlgroup">Girl Group Smackdown</option>
+                <option value="smackdown">Lip-Sync Smackdown</option>
+                <option value="lalaparuza">LaLaPaRuZa</option>
+            </select>
+        </div>
+            
+        <div>
+            <p> Finale formats: </p>
+            <select id="format">
+                <option value="top3">Top 3 Into Top 2</option>
+                <option value="top4">Top 4 (LSFTC)</option>
+                <option value="canS2">Semi-Finals</option>
+                <option value="team">All Stars 1</option>
+                <option value="all-stars">All Stars 2 and 4 </S></option>
+                <option value="jury-allstars"> All Stars 3</option>
+                <option value="international-allstars">Vs The World</option>
+                <option value="lipsync-assassin">All Stars 5 to 6</option>
+                <option value="all-winners">All Stars 7</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Chocolate Bar Twist: </p>
+            <input type="checkbox" id="chocolateBar"> Random
+            <input type="checkbox" id="chocolateBarChoosable"> Choosable
+        </div>
+        <div><button onclick="startSimulation()">Simulate now!</button></div>
+    
+        <input type="checkbox" id="disableDouble">Disable double shantays and sashays
+        <input type="checkbox" id="onlyCustomQueens"> Show Only Custom Queens
+        <hr>
+
+        <big>More options!</big>
+
+        <div>
+            <b><p>
+                <big><a href="predef.html" id="inblock">Seasons</a></big>
+            </p></b>
+            <b><p>
+                <big><a href="custom.html" id="inblock">Custom</a></big>
+            </p></b>
+            <b><p>
+                
+            </p></b>
+            <b><p>
+               
+            </p></b>
+        </div>
+
+    </div>
+
+   

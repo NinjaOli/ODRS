@@ -17,3 +17,4 @@ Current mini-challenge lottery games:
 5. Multiply
 6. Winfall
 7. Goldzone
+8. You Pick
